@@ -1,0 +1,75 @@
+.an-main-div {
+    overflow: hidden;
+}
+
+.an-text {
+    position: absolute;
+    opacity: 0;
+}
+
+.an-back {
+    margin: 10px 0;
+    max-width: 300px;
+    width: 80%;
+    position: absolute;
+    top: 55vh;
+    opacity: 0;
+}
+
+@media (min-width: 600px) {
+    .santa-hat {
+        width: 90vh;
+        transform: rotate(10deg);
+    }
+}
+
+@media (max-width: 599px) {
+    .santa-hat {
+        width: 90vw;
+        transform: rotate(10deg);
+    }
+}
+
+.flip-move-down {
+    animation: flip 1s ease-in-out 0s forwards, move-down 1s ease-in-out 1.25s forwards;
+}
+
+.appear {
+    animation: appear 1s ease-out 1.25s forwards;
+}
+
+.appear-delayed {
+    animation: appear 0.75s ease-out 3s forwards;
+}
+
+@keyframes flip {
+    from {
+        transform: rotate(10deg);
+    }
+
+    to {
+        transform: rotate(190deg);
+        padding: 0 50px 100px 0;
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: rotate(190deg) translateY(0px);
+    }
+
+    to {
+        transform: rotate(180deg) translateY(-100vh) translateX(-250px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}

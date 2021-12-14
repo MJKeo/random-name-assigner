@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import './css/Main.css';
+import './css/App.css';
+import { Login }  from './screens/Login';
+import { CreateRoom } from './screens/CreateRoom';
+import { JoinRoom } from './screens/JoinRoom';
+import { Lobby } from './screens/Lobby';
+import { AssignName } from './screens/AssignName';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="white-bg app-main-div">
+        <Routes>
+          <Route path="/" element={Login()} exact/>
+          <Route path="/create-room" element={<CreateRoom />} exact/>
+          <Route path="/join-room" element={<JoinRoom />} exact/>
+          <Route path="/lobby" element={<Lobby />} exact/>
+          <Route path="/assign-name" element={<AssignName />} exact/>
+        </Routes>
     </div>
   );
 }

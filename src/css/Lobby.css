@@ -1,0 +1,31 @@
+.lobby-player-div {
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.lobby-player-underline {
+    height: 1px;
+    background-color: rgb(97, 97, 97);
+    width: 100%;
+    margin: 10px 0;
+}
+
+.indented {
+    margin-left: 5px;
+}
+
+.lobby-player {
+    margin: 15px 0 15px 20px;
+}
+
+.lobby-start-btn {
+    width: 80%;
+    max-width: 300px;
+}
+
+@media (max-width: 599px) {
+    .lobby-code {
+        margin-bottom: 40px;
+    }
+}

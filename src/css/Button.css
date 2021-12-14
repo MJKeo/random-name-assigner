@@ -1,0 +1,53 @@
+/* Main buttons */
+
+.btn {
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.15s;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.clickable:active {
+    transform: scale(1.03);
+}
+
+.secondary {
+    border: solid 3px #357DED;
+}
+
+.secondary:hover {
+    color: white;
+    background-color: #357DED;
+}
+
+.secondary-inactive {
+    border: solid 3px #909090;
+}
+
+/* Back button */
+
+@media (min-width: 600px) {
+    .back-btn {
+        width: 50px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    
+    .back-btn:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 599px) {
+    .back-btn {
+        width: 35px;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+    }
+}

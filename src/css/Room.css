@@ -1,0 +1,15 @@
+.room-title {
+    margin-bottom: 30px;
+}
+
+.room-textbox {
+    margin: 10px 0;
+    max-width: 400px;
+    width: 80%;
+}
+
+.room-btn {
+    margin: 20px 0;
+    max-width: 400px;
+    width: 80%;
+}

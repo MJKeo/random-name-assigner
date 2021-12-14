@@ -1,0 +1,26 @@
+.textbox-main {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    color: #383838;
+    font-weight: bold;
+    width: calc(100% - 6px);
+    align-self: center;
+}
+
+.textbox-main::placeholder {
+    color: #686868;
+}
+
+.textbox-main:focus {
+    outline: none;
+}
+
+.textbox-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    width: 100%;
+    align-self: center;
+    color: #505050;
+}
